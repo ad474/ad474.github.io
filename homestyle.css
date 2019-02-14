@@ -3,7 +3,7 @@ body{
   text-align: center;
   margin-top: 0;
 }
-div{
+.blah{
   margin:25px 150px;
   background-color: #ffd3de;
   height: 600px;
