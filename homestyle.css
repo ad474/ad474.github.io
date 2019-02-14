@@ -1,0 +1,63 @@
+body{
+  background-color: #3f8f8d;
+  text-align: center;
+  margin-top: 0;
+}
+div{
+  margin:25px 150px;
+  background-color: #ffd3de;
+  height: 600px;
+}
+p{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+}
+button{
+  background-color: #cdffeb;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: 'Cinzel', serif;
+  float: left;
+  margin-left: 0;
+  height: 10%;
+  width: 25%;
+  font-size: 25px;
+}
+.lobutton{
+  font-size: 20px;
+  position:fixed;
+  margin: 25px 150px;
+  top:0;
+  right:7px;
+  height: 5%;
+  width:10%;
+  font-family: 'Open Sans', sans-serif;
+}
+.record{
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+}
+h4{
+  display: inline;
+}
+.normaltext{
+  padding-top: 0;
+  padding-bottom: 10px;
+  text-align: left;
+  margin-top: 0;
+  margin-left: 20px;
+  font-family: 'Bree Serif', serif;
+  font-size: 30px;
+}
+.ubutton{
+  text-align: center;
+  position: relative;
+  left: 400px;
+  top: 100px;
+
+
+}

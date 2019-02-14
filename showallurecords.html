@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>See records</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Cinzel|Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <p>See records</p>
+      <a href="showallurecords.html"><button style="margin-left: 130px;">Show all records</button></a>
+      <a href="sorturecords.html"><button type="button" name="button">Sort records</button></a>
+    </div>
+  </body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCUKhwxOFdGOTgi34Y7cNp29YYhIrTFnSI",
+    authDomain: "house-662d8.firebaseapp.com",
+    databaseURL: "https://house-662d8.firebaseio.com",
+    projectId: "house-662d8",
+    storageBucket: "house-662d8.appspot.com",
+    messagingSenderId: "116794159591"
+  };
+  firebase.initializeApp(config);
+</script>

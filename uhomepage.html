@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Page</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Cinzel|Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+    <p>Hello!</p>
+      <a href="addrecord.html" class="fb"><button style="margin-left: 130px;">Add record</button></a>
+      <a href="showurecords.html"><button>Access records</button></a>
+      <a href="notifications.html"><button>Notifications</button></a>
+      <a href="signin.html"><button class="lobutton">Log Out</button></a>
+  </div>
+  </body>
+</html>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<link rel="stylesheet" href="dist/jquery.convform.css">
+<script src="dist/jquery.convform.js"></script>
+<input type="text" name="name" conv-question="Question to ask">
+<select name="conversation" conv-question="Question To Ask">
+  <option value="yes">Yes</option>
+  <option value="no">No</option>
+</select>
+<div conv-fork="conversation">
+  <div conv-case="yes">
+    <input type="text" conv-question="Question To Ask" no-answer="true">
+  </div>
+  <div conv-case="no">
+    <select name="thought" conv-question="Question To Ask">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+</div>
+var convForm = $('.my-conv-form-wrapper').convform({
+    placeHolder : 'Type Here',
+    typeInputUi : 'textarea',
+    timeOutFirstQuestion : 1200,
+    buttonClassStyle : 'icon2-arrow',
+    eventList : {
+      onSubmitForm : function(convState) {
+        console.log('completed');
+        convState.form.submit();
+        return true;
+      },
+      onInputSubmit : function(convState, readyCallback) {readyCallback()}
+    },
+    formIdName : 'convForm',
+    inputIdName : 'userInput',
+    loadSpinnerVisible : '',
+    buttonText: '▶'
+});
