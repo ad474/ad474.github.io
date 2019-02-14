@@ -25,24 +25,4 @@
     </div>
   </body>
 </html>
-<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCVON2-lcNiEerDHjZ0ujvotGwxN8Tkosc",
-    authDomain: "hackdataproject.firebaseapp.com",
-    databaseURL: "https://hackdataproject.firebaseio.com",
-    projectId: "hackdataproject",
-    storageBucket: "hackdataproject.appspot.com",
-    messagingSenderId: "946035695204"
-  };
-  firebase.initializeApp(config);
-  console.log(firebase);
-  var database=firebase.database();
-  var ref=database.ref('hackdataproject');
-  var data={
-    Aadhar:"123",
-    Password: "wwr"
-  }
-  ref.push(data);
-</script>
+
